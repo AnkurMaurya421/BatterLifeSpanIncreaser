@@ -31,7 +31,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/lowerslider"
         android:layout_width="410dp"
         android:layout_height="57dp"
         android:layout_marginTop="48dp"
@@ -40,12 +40,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <SeekBar
-        android:id="@+id/seekBar3"
+        android:id="@+id/upperslider"
         android:layout_width="409dp"
         android:layout_height="54dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+        app:layout_constraintTop_toBottomOf="@+id/lowerslider" />
 
     <TextView
         android:id="@+id/textView2"
@@ -54,7 +54,7 @@
         android:layout_marginTop="1dp"
         android:text="Lower Limit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
+        app:layout_constraintTop_toBottomOf="@+id/upperslider" />
 
     <TextView
         android:id="@+id/textView3"
@@ -65,22 +65,20 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/lowerlimit"
         android:layout_width="58dp"
         android:layout_height="25dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="20dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBar3" />
+        app:layout_constraintTop_toBottomOf="@+id/upperslider" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/upperlimit"
         android:layout_width="58dp"
         android:layout_height="25dp"
         android:layout_marginEnd="20dp"
-        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/lowerlimit" />
 
 </android.support.constraint.ConstraintLayout>
